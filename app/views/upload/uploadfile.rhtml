@@ -1,7 +1,7 @@
-<h1>File Upload</h1>
-<% form_tag ({:action => 'uploadFile'}, 
+<h1>Upload Map</h1>
+<% form_tag({:action => 'uploadFile'}, 
                         :multipart => true) do %>
-<p><label for="upload_file">Select File</label> : 
+<p><label for="upload_file">Select Image</label> : 
 <%= file_field 'upload', 'image' %></p>
 <%= submit_tag "Upload" %>
 <% end %>

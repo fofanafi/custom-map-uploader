@@ -3,8 +3,12 @@ class UploadController < ApplicationController
      render :file => 'app/views/upload/uploadfile.rhtml'
   end
   def uploadFile
-    post = Image.save(params[:upload])
-    render :text => "File has been uploaded successfully"
+		tmp = Tempfile.new("tile")
+		tmp.write("blah")
+		tmp.close
+		render :text => "temp file " + tmp.path + " created"
 
+    #post = Image.save(params[:upload])
+		#render :text => "File has been uploaded successfully"
   end
 end
