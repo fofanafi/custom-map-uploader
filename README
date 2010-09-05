@@ -1,1 +1,13 @@
 A simple rails app that allows you to upload an image and see it on google maps with panning and zoom.
+
+All of the processing is done in the foreground. 
+
+Models:
+image - 'Saving' the image tiles it and saves the tiles to public/data/tiles.
+
+Views:
+upload/upload.html.erb - Pick an image to upload.
+viewmap.html.erb - See the map. Right now, this simply displays the tiles in public/data/tiles.
+
+Controllers:
+upload - Uploads the image, then displays the map.
