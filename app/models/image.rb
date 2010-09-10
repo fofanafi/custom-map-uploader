@@ -1,6 +1,4 @@
 require 'RMagick'
-require 'rubygems'
-require 'imagetiler'
 
 class Image < ActiveRecord::Base
 
